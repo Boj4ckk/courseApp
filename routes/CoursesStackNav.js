@@ -9,10 +9,12 @@ import { HeaderButtons } from 'react-navigation-header-buttons'
 
 
 import { Landing } from '../Screens/Landing'
+
 import Cart from '../Screens/Cart'
 import CourseInfo  from '../Screens/CourseInfo'
 
 import {CartIcon} from '../components/CartIcon'
+import { DrawerIcon } from '../components/DrawerIcon'
  
 
 const CoursesStackNavigator = createStackNavigator()
@@ -26,6 +28,10 @@ export const CoursesNavigator = ({navigation,route}) =>{
             headerTitleStyle: {fontWeight:'bold'},
             headerRight : () => (
                 <CartIcon navFunction={() =>navigation.navigate('Cart')}/>
+            ),
+            headerLeft : () =>(
+                <DrawerIcon navFunction={() => navigation.openDrawer()}/>
+                
             )
         })}>
             <CoursesStackNavigator.Screen
@@ -42,6 +48,9 @@ export const CoursesNavigator = ({navigation,route}) =>{
                 name='CourseInfo'
                 component={CourseInfo}
                 options={({route}) => ({title:route.params.item.title})}
+               
+
+                
                 
             
             />  
