@@ -39,20 +39,12 @@ export const CoursesNavigator = ({navigation,route}) =>{
                 component={Landing}
             />
 
-            <CoursesStackNavigator.Screen
-                name='Cart'
-                component={Cart}            
-            />
+            
 
             <CoursesStackNavigator.Screen
                 name='CourseInfo'
                 component={CourseInfo}
                 options={({route}) => ({title:route.params.item.title})}
-               
-
-                
-                
-            
             />  
         </CoursesStackNavigator.Navigator>
     )
