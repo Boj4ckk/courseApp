@@ -1,14 +1,14 @@
-# React Native Pixel
+# React Native courseApp
 
 ## Description
-This application, built with React Native, showcases a catalog of profiles, each featuring a profile picture, name, age, and a gallery of photos. Users can browse through the profiles and view the images associated with each.
+This application, built with React Native, showcases a catalog online Courses that a users can purchase.
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/idontwannafailmyexam/pixel.git
-   cd pixel
+   git clone https://github.com/idontwannafailmyexam/courseApp.git
+   cd courseApp
    ```
 ## Install dependencies
 ```bash
